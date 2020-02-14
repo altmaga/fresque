@@ -1,0 +1,136 @@
+/* body {
+    padding-top: 100px;
+    background-color: #000058;
+} */
+
+h2 {
+    margin-top: 0;
+}
+
+.viewport {
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 200px;
+    -webkit-transform: scale(0.75,0.75);
+    -moz-perspective: 800px;
+    -moz-perspective-origin: 50% 200px;
+    -moz-transform: scale(0.75,0.75);
+    perspective: 800px;
+    perspective-origin: 50% 200px;
+    transform: scale(0.75,0.75);
+}
+
+.cube {
+    position: relative;
+    margin: 0 auto 100px;
+    height: 400px;
+    width: 400px;
+    -webkit-transition: -webkit-transform 50ms linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-10deg) rotateY(20deg);
+    -moz-transition: -moz-transform 50ms linear;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateX(-10deg) rotateY(20deg);
+    transition: transform 50ms linear;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateY(20deg);
+}
+
+.cube h2 {
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.cube a {
+    color: #fff;
+}
+
+.cube > div {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.85);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+    border: 0px solid #000;
+    /* border-radius: 3px; */
+    /* outline: 12px solid #000; */
+    outline-offset: -12px;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.cube > div p {
+    margin-bottom: 5px;
+}
+
+.cube > div h2 {
+    font-family: 'gilroyextrabold';
+}
+
+.cube > div:first-child  {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    -moz-transform: rotateX(90deg) translateZ(200px);
+    transform: rotateX(90deg) translateZ(200px);
+    background-image: url('../../assets/img/video_interactive-2.gif');
+}
+
+.cube > div:nth-child(2) {
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    transform: translateZ(200px);
+    background-image: url('../../assets/img/faire-corps-2.jpg');
+}
+
+.cube > div:nth-child(3) {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    -moz-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+    text-align: center;
+    background-image: url('../../assets/img/faire-corps-3.jpg');
+}
+
+.cube > div:nth-child(4) {
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+    -moz-transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(200px);
+    background-image: url('../../assets/img/faire-corps-4.jpg');
+}
+
+.cube > div:nth-child(5) {
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    -moz-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+    background-image: url('../../assets/img/faire-corps-5.jpg');
+}
+
+/* .cube > div:nth-child(5) p {
+    text-align: center;
+    font-size: 2.77em;
+    margin: 40px;
+    line-height: 60px;
+} */
+
+.cube > div:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    background-image: url('../../assets/img/faire-corps-6.jpg');
+}
+
+object {
+    opacity: 0.5;
+}
+
+object:hover {
+    opacity: 1;
+}
